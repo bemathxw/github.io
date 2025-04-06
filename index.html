@@ -17,38 +17,43 @@
 </head>
 
 <body>  
-    <header>
+    <header role="banner">
         <div class="container">
             <h1>Customify</h1>
             <p class="subtitle">Додаток для управління музичними ресурсами та створення плейлистів у Spotify</p>
         </div>
     </header>
     
-    <main>
-        <section class="relevance">
+    <nav role="navigation" aria-label="Головна навігація">
+        <div class="container">
+            <ul>
+                <li><a href="#relevance">Актуальність</a></li>
+                <li><a href="#goal">Мета</a></li>
+                <li><a href="#results">Результати</a></li>
+                <li><a href="#contact">Контакти</a></li>
+                <li><a href="#goals">Основні завдання</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main">
+        <section id="relevance" class="relevance" aria-labelledby="relevance-heading">
             <div class="container">
-                <h2>Актуальність теми</h2>
+                <h2 id="relevance-heading">Актуальність теми</h2>
                 <p>Сьогодні Spotify є одним з найпопулярніших музичних сервісів у світі. Користувачі можуть слухати музику, створювати власні плейлисти та слідкувати за своїми улюбленими музикантами. Spotify рекомендують нову музику, яка їм може сподобатися, але це досить часто не відповідає їхнім очікуванням. Тому я вирішив створити додаток, який допоможе користувачам знайти нову музику на основі їхніх уподобань.</p>
             </div>
         </section>
         
-        <section class="goals">
+        <section id="goal" class="goal" aria-labelledby="goal-heading">
             <div class="container">
-                <h2>Мета</h2>
+                <h2 id="goal-heading">Мета</h2>
                 <p>Мета цього додатку - спростити досвід користування Spotify, а саме, пошук нової музики, створення власних плейлистів та збереження їх у власному профілі по одному натисканню кнопки.</p>
             </div>
         </section>
         
-        <section class="goals">
+        <section id="goals" class="goals" aria-labelledby="goals-heading">
             <div class="container">
-                <h2>Мета</h2>
-                <p>Мета цього додатку - спростити досвід користування Spotify, а саме, пошук нової музики, створення власних плейлистів та збереження їх у власному профілі по одному натисканню кнопки.</p>
-            </div>
-        </section>
-        
-        <section class="results">
-            <div class="container">
-                <h2>Основні завдання</h2>
+                <h2 id="goals-heading">Основні завдання</h2>
                 <ul>
                     <li>Авторизація користувача в Spotify</li>
                     <li>Отримання топ-10 треків користувача за останні 30 днів</li>
@@ -61,13 +66,13 @@
 
         <section class="results">
             <div class="container">
-                <h2>Очікувані результати</h2>
+                <h2 id="results-heading">Очікувані результати</h2>
                 <p>Додаток, що матиме вищезгаданий функціонал і буде зручним у використанні.</p>
             </div>
         </section>
     </main>
     
-    <footer>
+    <footer id="contact" role="contentinfo">
             <img src="https://sumdu.edu.ua/images/brand/logo-sumdu.svg" class="d-block mx-auto pb-4" alt="Логотип СумДУ">
             <p>Бакалаврська робота 2025. Герасимів Матвій.</p>
             <p>Контактна інформація: <a href="mailto:bema@wideraxx.com">bema@wideraxx.com</a></p>

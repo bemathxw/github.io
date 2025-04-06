@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #4a6fa5;
+    --secondary-color: #166088;
+    --text-color: #333;
+    --light-bg: #f5f7fa;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section:nth-child(even) {
+    background-color: var(--light-bg);
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
